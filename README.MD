@@ -1,0 +1,1 @@
+these scripts are for educational purposes only, I take no responsibility for the use of any of them or for any damage caused by them
