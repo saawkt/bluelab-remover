@@ -35,5 +35,8 @@ del /f /q C:\bluedu\blues\bluecore\integrity.cmd >nul 2>&1
 powershell Invoke-WebRequest -Uri "https://github.com/saawkt/bluelab-remover/raw/refs/heads/main/disable.reg" -OutFile "C:\Windows\Temp\disable.reg"
 cd /d C:\Windows\Temp >nul 2>&1
 regedit /s Disable.reg
-exit /b
+timeout /t 1 /nobreak
+del /f /q Disable.reg >nul 2>&1
+start /b "" cmd /c del "%~f0"&exit /b
+
 
