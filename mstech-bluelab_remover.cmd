@@ -7,10 +7,14 @@ taskkill /f /im bmon.exe /t
 taskkill /f /im nssm.exe /t 
 taskkill /f /im powershell.exe /t 
 taskkill /f /im BlueDashUser.exe /t 
-taskkill /f /im http2.exe /t 
-taskkill /f /im http.exe /t 
 taskkill /f /im winvnc.exe /t 
 taskkill /f /im vncviewer.exe /t 
+taskkill /f /im java.exe /t 
+taskkill /f /im wrapper-windows-x86-64.exe /t
+:: this is probably not from bluelab, but from where I got the files there was this running too
+taskkill /f /im DefenderDaemon.exe /t
+taskkill /f /im http2.exe /t 
+taskkill /f /im http.exe /t  
 
 :: main
 rmdir /s /q "C:\mstech\Blues\bluemonitor\client\service\bin" >nul 2>&1
