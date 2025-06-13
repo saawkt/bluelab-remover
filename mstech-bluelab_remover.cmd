@@ -11,6 +11,8 @@ taskkill /f /im winvnc.exe /t
 taskkill /f /im vncviewer.exe /t 
 taskkill /f /im java.exe /t 
 taskkill /f /im wrapper-windows-x86-64.exe /t
+taskkill /f /im vinculador.exe /t 
+taskkill /f /im UnitBindWindow.exe /t 
 :: this is probably not from bluelab, but from where I got the files there was this running too
 taskkill /f /im DefenderDaemon.exe /t
 taskkill /f /im http2.exe /t 
@@ -30,6 +32,8 @@ del /f /q C:\Program Files\BlueLab\resources\BlueLab_VNC\x64\winvnc.exe >nul 2>&
 del /f /q C:\Program Files\BlueLab\resources\BlueLab_VNC\x64\vncviewer.exe >nul 2>&1
 del /f /q C:\bluedu\blues\bluecore\bluecoreUser.exe >nul 2>&1
 del /f /q C:\bluedu\blues\bluecore\integrity.cmd >nul 2>&1
+sc stop uvnc_service
+sc delete uvnc_service
 
 :: this is probably not from bluelab, but from where I got the files there was this running too 2
 del /f /q C:\mstech\Blues\bluedash\BlueDashUser.exe >nul 2>&1
