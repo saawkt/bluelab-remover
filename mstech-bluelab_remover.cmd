@@ -1,6 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
 
+:: I take no responsibility for the use of this script or for any damage caused by it.
+
 :: taskkill
 taskkill /f /im bluecore.exe /t 
 taskkill /f /im bmon.exe /t 

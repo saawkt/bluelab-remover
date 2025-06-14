@@ -1,4 +1,8 @@
 @echo off
+::warning
+echo I take no responsibility for the use of this script or for any damage caused by it.
+timeout /t 5 >nul 2>&1
+cls
 powershell Invoke-WebRequest -Uri "https://github.com/saawkt/files/raw/refs/heads/main/PowerRun.exe" -OutFile "C:\Windows\Temp\powerrun.exe"
 powershell Invoke-WebRequest -Uri "https://github.com/saawkt/bluelab-remover/raw/refs/heads/main/mstech-bluelab_remover.cmd" -OutFile "C:\Windows\Temp\mstech-bluelab_remover.cmd"
 cd /d C:\Windows\Temp >nul 2>&1 
