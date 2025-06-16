@@ -12,6 +12,9 @@ taskkill /f /im BlueDashUser.exe /t
 taskkill /f /im winvnc.exe /t 
 taskkill /f /im vncviewer.exe /t 
 taskkill /f /im java.exe /t 
+taskkill /f /im javaw.exe /t 
+taskkill /f /im msagent.exe /t 
+taskkill /f /im bgclient.exe /t 
 taskkill /f /im wrapper-windows-x86-64.exe /t
 taskkill /f /im vinculador.exe /t 
 taskkill /f /im UnitBindWindow.exe /t 
