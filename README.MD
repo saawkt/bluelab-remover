@@ -1,7 +1,5 @@
-# Important
-these scripts are for educational purposes only, I take no responsibility for the use of any of them or for any damage caused by them
-
-note: this script may or may not work, as its installation location may vary depending on who installed it
+# Disclaimer
+This script is provided “as is” for educational and entertainment purposes only. No warranties, express or implied, are provided regarding its functionality, safety, or suitability for any particular purpose. The author shall not be held liable for any damages, losses, or issues arising from the use or misuse of this script. Use at your own risk. The author reserves the right to remove or discontinue distribution of this script at any time, with or without prior notice. No further updates, maintenance, or support are guaranteed.
 
 ## USAGE
 Download [run.cmd](https://github.com/saawkt/bluelab-remover/releases/tag/asd) and run as administrator
