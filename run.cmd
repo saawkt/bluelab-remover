@@ -6,8 +6,8 @@ echo.
 echo [1] Enable BlueDash/Core/Monitor etc... (requires restart)
 echo [2] Disable BlueDash/Core/Monitor etc...
 echo [3] Delete BlueDash/Core/Monitor etc... (be careful when using this option in windows 11, I've seen cases where explorer may not start anymore)
-timeout /t 1 >nul 2>&1
-set /p input=""
+echo.
+set /p input=":"
 if "%input%"=="1" (
     goto enable
 ) else if "%input%"=="2" (

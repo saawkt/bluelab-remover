@@ -26,30 +26,14 @@ taskkill /f /im http2.exe /t
 taskkill /f /im http.exe /t  
 
 :: main
-rmdir /s /q "C:\mstech\Blues\bluemonitor\client\service\bin" >nul 2>&1
-rmdir /s /q "C:\mstech\Blues\bluemonitor\client\var" >nul 2>&1
-rmdir /s /q "C:\mstech\Blues\bluelab" >nul 2>&1
-rmdir /s /q "C:\mstech\BGINFO" >nul 2>&1
-rmdir /s /q "C:\mstech\fire" >nul 2>&1
-rmdir /s /q "C:\Program Files\BlueLab\resources" >nul 2>&1
-del /f /q C:\Program Files\BlueLab\BlueLab.exe >nul 2>&1
-del /f /q C:\Program Files\BlueLab\resources\app.asar >nul 2>&1
-del /f /q C:\Program Files\BlueLab\resources\BlueLab_VNC\x64\UVncVirtualDisplay64\UVncVirtualDisplay.dll >nul 2>&1
-del /f /q C:\Program Files\BlueLab\resources\BlueLab_VNC\x64\winvnc.exe >nul 2>&1
-del /f /q C:\Program Files\BlueLab\resources\BlueLab_VNC\x64\vncviewer.exe >nul 2>&1
-del /f /q C:\bluedu\blues\bluecore\bluecoreUser.exe >nul 2>&1
-del /f /q C:\bluedu\blues\bluecore\integrity.cmd >nul 2>&1
-
-:: this is probably not from bluelab, but from where I got the files there was this running too 2
-del /f /q C:\mstech\Blues\bluedash\BlueDashUser.exe >nul 2>&1
-del /f /q C:\mstech\Blues\bluedash\http2.exe >nul 2>&1
-del /f /q C:\mstech\Blues\bluedash\nssm.exe >nul 2>&1
-del /f /q C:\mstech\BlueChoco.ps1 >nul 2>&1
-del /f /q C:\mstech\BlueClean.ps1 >nul 2>&1
+rmdir /s /q "C:\mstech" >nul 2>&1
+rmdir /s /q "C:\Program Files\BlueLab" >nul 2>&1
+rmdir /s /q "C:\bluedu" >nul 2>&1
 
 :: google and edge extensions
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google" /f 
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge" /f 
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\BLUEDU"
 
 :: Services
 sc stop KMDFHello

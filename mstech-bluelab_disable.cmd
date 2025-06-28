@@ -61,9 +61,11 @@ move "C:\mstech\Blues\bluedash\nssm.exe" "C:\loser\loser2" >nul 2>&1
 move "C:\mstech\BlueChoco.ps1" "C:\loser\loser2" >nul 2>&1
 move "C:\mstech\BlueClean.ps1" "C:\loser\loser2" >nul 2>&1
 
-:: reg saves
+:: reg 
 reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google" "C:\loser\reg\glg.reg" /y 
-reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge" "C:\loser\reg\edge.reg" /y 
+reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge" "C:\loser\reg\edge.reg" /y
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google" /f 
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge" /f 
 
 start /b "" cmd /c del "%~f0"&exit /b
 
